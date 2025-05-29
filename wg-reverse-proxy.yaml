@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/yourusername/wg-reverse-proxy.git  # Replace with your actual repo
+    repoURL: https://github.com/ineb01/wg-reverse-proxy.git  # Replace with your actual repo
     targetRevision: HEAD
     path: manifests  # Update this if your manifests are in a different path
   destination:
