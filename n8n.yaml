@@ -1,20 +1,20 @@
-#apiVersion: argoproj.io/v1alpha1
-#kind: Application
-#metadata:
-#  name: n8n
-#  namespace: argocd
-#spec:
-#  project: default
-#  source:
-#    repoURL: https://github.com/Ineb01/kubernetes-n8n.git
-#    path: .
-#    targetRevision: HEAD
-#  destination:
-#    server: https://kubernetes.default.svc
-#    namespace: n8n
-#  syncPolicy:
-#    automated:
-#      prune: true
-#      selfHeal: true
-#    syncOptions:
-#      - Replace=true
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: n8n
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/Ineb01/kubernetes-n8n.git
+    path: .
+    targetRevision: HEAD
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: n8n
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - Replace=true
