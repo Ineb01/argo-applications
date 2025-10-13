@@ -18,6 +18,7 @@ spec:
       selfHeal: true
     syncOptions:
       - Replace=true
+      - RespectIgnoreDifferences=true
   ignoreDifferences:
   - jsonPointers:
     - /spec/volumeName
