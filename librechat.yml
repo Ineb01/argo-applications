@@ -22,4 +22,7 @@ spec:
   - jsonPointers:
     - /spec/volumeName
     - /spec/storageClassName
+    - /spec/accessModes
+    - /spec/volumeMode
+    - /spec/resources
     kind: PersistentVolumeClaim
