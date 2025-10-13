@@ -18,3 +18,8 @@ spec:
       selfHeal: true
     syncOptions:
       - Replace=true
+  ignoreDifferences:
+  - jsonPointers:
+    - /spec/volumeName
+    - /spec/storageClassName
+    kind: PersistentVolumeClaim
