@@ -1,12 +1,12 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: open-webui
+  name: librechat
   namespace: argocd
 spec:
   project: default
   source:
-    repoURL: https://github.com/Ineb01/open-webui.git
+    repoURL: https://github.com/Ineb01/librechat.git
     path: .
     targetRevision: HEAD
   destination:
