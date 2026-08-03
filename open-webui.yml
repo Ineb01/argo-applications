@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: open-webui
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/Ineb01/open-webui.git
+    path: .
+    targetRevision: HEAD
+  destination:
+@@ -17,4 +17,4 @@ spec:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - Replace=true
